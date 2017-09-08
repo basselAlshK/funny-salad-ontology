@@ -1,0 +1,605 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://lab.basselkassem.com/funny-salad-ontology#"
+     xml:base="https://lab.basselkassem.com/funny-salad-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://lab.basselkassem.com/funny-salad-ontology">
+        <owl:versionIRI rdf:resource="https://lab.basselkassem.com/funny-salad-ontology/0.0.1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#hasCountryOfOrigin -->
+
+    <owl:ObjectProperty rdf:about="https://lab.basselkassem.com/funny-salad-ontology#hasCountryOfOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#isCountryOfOrigin"/>
+        <rdfs:domain rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#salad"/>
+        <rdfs:range rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#hasIngredient -->
+
+    <owl:ObjectProperty rdf:about="https://lab.basselkassem.com/funny-salad-ontology#hasIngredient">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#isIngredientOf"/>
+        <rdfs:domain rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#salad"/>
+        <rdfs:range rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#saladIngredient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#hasSpices -->
+
+    <owl:ObjectProperty rdf:about="https://lab.basselkassem.com/funny-salad-ontology#hasSpices">
+        <rdfs:subPropertyOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#hasIngredient"/>
+        <owl:inverseOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#isSpicesOf"/>
+        <rdfs:domain rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#salad"/>
+        <rdfs:range rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#spices"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#hasTopping -->
+
+    <owl:ObjectProperty rdf:about="https://lab.basselkassem.com/funny-salad-ontology#hasTopping">
+        <rdfs:subPropertyOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#hasIngredient"/>
+        <owl:inverseOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#isToppingOf"/>
+        <rdfs:domain rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#salad"/>
+        <rdfs:range rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#saladTopping"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#hasVegetables -->
+
+    <owl:ObjectProperty rdf:about="https://lab.basselkassem.com/funny-salad-ontology#hasVegetables">
+        <rdfs:subPropertyOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#hasIngredient"/>
+        <owl:inverseOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#isVegetableOf"/>
+        <rdfs:domain rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#salad"/>
+        <rdfs:range rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#vegetable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#isCountryOfOrigin -->
+
+    <owl:ObjectProperty rdf:about="https://lab.basselkassem.com/funny-salad-ontology#isCountryOfOrigin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#country"/>
+        <rdfs:range rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#salad"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#isIngredientOf -->
+
+    <owl:ObjectProperty rdf:about="https://lab.basselkassem.com/funny-salad-ontology#isIngredientOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#saladIngredient"/>
+        <rdfs:range rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#salad"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#isSpicesOf -->
+
+    <owl:ObjectProperty rdf:about="https://lab.basselkassem.com/funny-salad-ontology#isSpicesOf">
+        <rdfs:subPropertyOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#isIngredientOf"/>
+        <rdfs:domain rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#spices"/>
+        <rdfs:range rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#salad"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#isToppingOf -->
+
+    <owl:ObjectProperty rdf:about="https://lab.basselkassem.com/funny-salad-ontology#isToppingOf">
+        <rdfs:subPropertyOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#isIngredientOf"/>
+        <rdfs:domain rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#saladTopping"/>
+        <rdfs:range rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#salad"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#isVegetableOf -->
+
+    <owl:ObjectProperty rdf:about="https://lab.basselkassem.com/funny-salad-ontology#isVegetableOf">
+        <rdfs:subPropertyOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#isIngredientOf"/>
+        <rdfs:domain rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#vegetable"/>
+        <rdfs:range rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#salad"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#basilsTopping -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#basilsTopping">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#herbTopping"/>
+        <owl:disjointWith rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#rosemaryTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#cashewsTopping -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#cashewsTopping">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#nutTopping"/>
+        <owl:disjointWith rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#pineNutsTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#cinnamon -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#cinnamon">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#spices"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#country -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#country"/>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#crackedWheat -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#crackedWheat">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#saladIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#cucumber -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#cucumber">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#food -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#food"/>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#funnySalad -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#funnySalad">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#salad"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#greenOnions -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#greenOnions">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#herbTopping -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#herbTopping">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#saladTopping"/>
+        <owl:disjointWith rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#nutTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#lemon -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#lemon">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#mint -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#mint">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#namedSalad -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#namedSalad">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#salad"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#nutTopping -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#nutTopping">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#saladTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#oliveOil -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#oliveOil">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#saladIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#parsley -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#parsley">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#pepper -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#pepper">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#spices"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#pineNutsTopping -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#pineNutsTopping">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#nutTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#potato -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#potato">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#radish -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#radish">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#romaine -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#romaine">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#rosemaryTopping -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#rosemaryTopping">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#herbTopping"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#salad -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#salad">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#food"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#saladIngredient -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#saladIngredient">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#food"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#saladTopping -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#saladTopping">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#food"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#salt -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#salt">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#spices"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#spices -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#spices">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#food"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#spicySalad -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#spicySalad">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#salad"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#syrianBread -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#syrianBread">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#saladIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#syrianSalad -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#syrianSalad">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#salad"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#tomato -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#tomato">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#vegetable -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#vegetable">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#saladIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#zaatarBarri -->
+
+    <owl:Class rdf:about="https://lab.basselkassem.com/funny-salad-ontology#zaatarBarri">
+        <rdfs:subClassOf rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#spices"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#Jordan -->
+
+    <owl:NamedIndividual rdf:about="https://lab.basselkassem.com/funny-salad-ontology#Jordan">
+        <rdf:type rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#country"/>
+        <isCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#patataSalad"/>
+        <isCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#taboulaSalad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#Lebanon -->
+
+    <owl:NamedIndividual rdf:about="https://lab.basselkassem.com/funny-salad-ontology#Lebanon">
+        <rdf:type rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#country"/>
+        <isCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#fatoushSalad"/>
+        <isCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#taboulaSalad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#Palestine -->
+
+    <owl:NamedIndividual rdf:about="https://lab.basselkassem.com/funny-salad-ontology#Palestine">
+        <rdf:type rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#country"/>
+        <isCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#jarjeerSalad"/>
+        <isCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#taboulaSalad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#Syria -->
+
+    <owl:NamedIndividual rdf:about="https://lab.basselkassem.com/funny-salad-ontology#Syria">
+        <rdf:type rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#country"/>
+        <isCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#fatoushSalad"/>
+        <isCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#jarjeerSalad"/>
+        <isCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#taboulaSalad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#Turkey -->
+
+    <owl:NamedIndividual rdf:about="https://lab.basselkassem.com/funny-salad-ontology#Turkey">
+        <rdf:type rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#country"/>
+        <isCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#jarjeerSalad"/>
+        <isCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#taboulaSalad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#fatoushSalad -->
+
+    <owl:NamedIndividual rdf:about="https://lab.basselkassem.com/funny-salad-ontology#fatoushSalad">
+        <rdf:type rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#namedSalad"/>
+        <hasCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#Lebanon"/>
+        <hasCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#Syria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#jarjeerSalad -->
+
+    <owl:NamedIndividual rdf:about="https://lab.basselkassem.com/funny-salad-ontology#jarjeerSalad">
+        <rdf:type rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#namedSalad"/>
+        <hasCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#Palestine"/>
+        <hasCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#Syria"/>
+        <hasCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#Turkey"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#patataSalad -->
+
+    <owl:NamedIndividual rdf:about="https://lab.basselkassem.com/funny-salad-ontology#patataSalad">
+        <rdf:type rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#namedSalad"/>
+        <hasCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#Jordan"/>
+        <hasCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#Syria"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://lab.basselkassem.com/funny-salad-ontology#taboulaSalad -->
+
+    <owl:NamedIndividual rdf:about="https://lab.basselkassem.com/funny-salad-ontology#taboulaSalad">
+        <rdf:type rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#namedSalad"/>
+        <hasCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#Jordan"/>
+        <hasCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#Lebanon"/>
+        <hasCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#Palestine"/>
+        <hasCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#Syria"/>
+        <hasCountryOfOrigin rdf:resource="https://lab.basselkassem.com/funny-salad-ontology#Turkey"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#cinnamon"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#pepper"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#salt"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#zaatarBarri"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#crackedWheat"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#oliveOil"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#syrianBread"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#vegetable"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#cucumber"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#greenOnions"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#lemon"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#mint"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#parsley"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#radish"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#romaine"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#tomato"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#funnySalad"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#namedSalad"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#spicySalad"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#syrianSalad"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#salad"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#saladIngredient"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#saladTopping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#hasCountryOfOrigin"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#hasIngredient"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#isCountryOfOrigin"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#isIngredientOf"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#hasCountryOfOrigin"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#hasIngredient"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#isIngredientOf"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#hasSpices"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#hasTopping"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#hasVegetables"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#isSpicesOf"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#isToppingOf"/>
+            <rdf:Description rdf:about="https://lab.basselkassem.com/funny-salad-ontology#isVegetableOf"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
